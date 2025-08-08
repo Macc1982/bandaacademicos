@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Banda Acadêmicos — Shows e Eventos</title>
+  <meta name="description" content="Energia no palco, alegria garantida. Feche seu show com a Banda Acadêmicos." />
+  <meta property="og:title" content="Banda Acadêmicos — Shows e Eventos" />
+  <meta property="og:description" content="Shows, eventos e experiências únicas na Bahia e no Brasil." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0b0b0c" />
+  <style>
+    :root{
+      --bg:#0b0b0c; --ink:#f7f7f8; --muted:#b5b5bb;
+      --primary:#f5c400; --card:#121214; --border:#1c1c1f;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;background:var(--bg);color:var(--ink);
+      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+    a{color:var(--ink);text-decoration:none}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    .nav{display:flex;justify-content:space-between;align-items:center}
+    .brand{display:flex;gap:10px;align-items:center;font-weight:800}
+    .brand svg{width:28px;height:28px}
+    .nav a{margin-left:18px;opacity:.9} .nav a:hover{opacity:1}
+    .btn{display:inline-block;border:1px solid var(--border);padding:12px 18px;border-radius:10px}
+    .btn--primary{background:var(--primary);color:#101010;border-color:transparent;font-weight:700}
+    .btn--ghost{border-color:var(--primary);color:var(--primary)}
+    .hero{display:grid;grid-template-columns:1.2fr 1fr;gap:32px;align-items:center;padding-top:12px}
+    .hero h1{font-size:44px;line-height:1.05;margin:0 0 12px}
+    .hero p{color:var(--muted);font-size:18px;margin:0 0 18px}
+    .highlight{color:var(--primary)}
+    .cta{display:flex;gap:12px;flex-wrap:wrap;margin:10px 0}
+    .trust{display:flex;gap:16px;color:var(--muted);font-size:14px;margin-top:10px}
+    .hero__art{aspect-ratio:16/10;background:linear-gradient(180deg,#16161a,#0f0f11);
+      border:1px solid var(--border);border-radius:16px;display:grid;place-items:center}
+    .hero__art span{color:var(--primary);opacity:.9}
+    .strip{background:var(--card);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .card{background:#0f0f11;border:1px solid var(--border);padding:18px;border-radius:12px}
+    .card h3{margin:0 0 8px;color:var(--primary)}
+    h2{font-size:28px;margin:26px 0 12px}
+    .media__grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .ratio{position:relative;width:100%;padding-bottom:56%}
+    .ratio iframe{position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:12px}
+    .agenda__list{list-style:none;padding:0;margin:0 0 12px}
+    .agenda__list li{padding:10px 0;border-bottom:1px dashed var(--border)}
+    .quote{background:#0f0f11;border:1px solid var(--border);padding:16px;border-radius:12px;margin:0}
+    .quote cite{display:block;color:var(--muted);margin-top:8px;font-style:normal}
+    .footer{border-top:1px solid var(--border);margin-top:24px}
+    .foot{display:flex;justify-content:space-between;align-items:center;color:var(--muted)}
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .grid{grid-template-columns:1fr}
+      .media__grid{grid-template-columns:1fr}
+      .hero h1{font-size:36px}
+    }
+  </style>
+  <!-- Fonte Inter (fallbacks já inclusos) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="container nav">
+    <div class="brand">
+      <!-- favicon inline -->
+      <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="48" height="48" rx="10" fill="#f5c400"/>
+        <path d="M10 32 L24 12 L38 32" stroke="#111" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span>Banda Acadêmicos</span>
+    </div>
+    <nav>
+      <a href="#shows">Shows</a>
+      <a href="#agenda">Agenda</a>
+      <a href="#contato" class="btn btn--primary">Contrate</a>
+    </nav>
+  </header>
+
+  <section class="hero container">
+    <div>
+      <h1>Energia no palco. <span class="highlight">Alegria garantida.</span></h1>
+      <p>Shows, eventos e experiências únicas na Bahia e em todo o Brasil.</p>
+      <div class="cta">
+        <a class="btn btn--primary" href="https://wa.me/5575991599187?text=Quero%20contratar%20a%20Banda%20Acad%C3%AAmicos" target="_blank" rel="noopener">Fechar show no WhatsApp</a>
+        <a class="btn" href="#midia">Ver mídia</a>
+      </div>
+      <div class="trust"><span>+13,6 mil views/30d</span><span>+1.8K seguidores</span></div>
+    </div>
+    <div class="hero__art"><span>Foto/Vídeo do show aqui</span></div>
+  </section>
+
+  <section id="shows" class="strip">
+    <div class="container grid">
+      <div class="card"><h3>Repertório Versátil</h3><p>Do pop ao axé, piseiro e pagode. Setlist sob medida para o seu público.</p></div>
+      <div class="card"><h3>Estrutura Profissional</h3><p>Equipe, pontualidade e produção cuidadosa para uma experiência impecável.</p></div>
+      <div class="card"><h3>Interação e Presença</h3><p>Show que conecta, diverte e faz o evento acontecer de verdade.</p></div>
+    </div>
+  </section>
+
+  <section id="midia" class="container">
+    <h2>Mídia</h2>
+    <div class="media__grid">
+      <div>
+        <div class="ratio">
+          <!-- troque o ID do vídeo -->
+          <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Vídeo ao vivo" allowfullscreen></iframe>
+        </div>
+        <small class="muted">Vídeo ao vivo</small>
+      </div>
+      <div>
+        <div class="ratio">
+          <!-- troque para seu embed do Spotify -->
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DXcBWIGoYBM5M" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </div>
+        <small class="muted">Setlist (preview)</small>
+      </div>
+    </div>
+  </section>
+
+  <section id="agenda" class="container">
+    <h2>Agenda</h2>
+    <ul class="agenda__list">
+      <li><strong>12 Ago</strong> — Salvador/BA — Evento privado</li>
+      <li><strong>25 Ago</strong> — Feira de Santana/BA — Festival</li>
+      <li><strong>07 Set</strong> — Paulo Afonso/BA — Show aberto</li>
+    </ul>
+    <a class="btn btn--ghost" href="https://wa.me/5575991599187?text=Quero%20confirmar%20datas%20dispon%C3%ADveis" target="_blank">Consultar datas</a>
+  </section>
+
+  <section class="container">
+    <h2>Depoimentos</h2>
+    <blockquote class="quote">“A banda levantou a galera — do primeiro ao último acorde.”<cite>— Produtor Local</cite></blockquote>
+  </section>
+
+  <section id="contato" class="container">
+    <h2>Feche seu show</h2>
+    <p>Fale direto com a produção.</p>
+    <div class="cta">
+      <a class="btn btn--primary" href="https://wa.me/5575991599187?text=Quero%20contratar%20a%20Banda%20Acad%C3%AAmicos" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+      <a class="btn" href="mailto:academicosproducoes@gmail.com">Enviar e-mail</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container foot">
+      <small>© <span id="y"></span> Banda Acadêmicos — Bahia, Brasil</small>
+      <small><a href="https://instagram.com/bandaacademicos" target="_blank" rel="noopener">@bandaacademicos</a></small>
+    </div>
+  </footer>
+
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
